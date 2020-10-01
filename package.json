@@ -1,0 +1,14 @@
+{
+  "name": "requisicao",
+  "version": "1.0.0",
+  "description": "Requisition_Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Filipe Verrone de Lima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
