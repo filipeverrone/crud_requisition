@@ -1,5 +1,5 @@
-const index = require("./views/index.ejs");
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 
 app.listen(3000, function () {
@@ -9,5 +9,11 @@ app.listen(3000, function () {
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render(index);
+  res.render("index.ejs");
 });
+
+app.post("/show", (req, res) => {
+  console.log(req.body);
+});
+
+app.use(bodyParser.urlencoded({ extended: true }));
